@@ -109,7 +109,10 @@ The output of our classification model indicated that it is able to correctly pr
   Understanding these factors can help in making informed decisions, such as avoiding peak departure times or being cautious during certain months, to minimize the risk of flight delays.
 
 ## Challenges 
-Initially tasked with acquiring data from an API, we found it to have too many limitations to be able to grab and analyze the data given the projects time constraints. We still came across challenges like redundant variables, our dataset being too large for model building, one-hot encoding exponentially expanded the dataset and out prediction accuracy was below our expectations. This was solved through dropping the redundant variables, taking 10% random sample of the data for exploratory model building, utilized Pandas "Get Dummies" sucessfully. and performed hyperparameter tuning.
+
+The initial approach was to focus on gathering historical data using an API, however, the free options available severely limited daily endpoint pulls with historical data typically requiring paid versions. Once the historical data was obtained from Kaggle, the next challenge was to one-hot encode the categorical variables for classification analysis. It was quickly identified that the dataset was too large to efficiently encode/explore as it created approximately 1300 columns of airline, destination and arrival airpots, so a test set of 10% was created to solve this challenge and expedite the process. 
+
+Initially tasked with acquiring data from an API, we found it to have too many limitations to be able to grab and analyze the data given the projects time constraints. We still came across challenges like 2redundant variables, our dataset being too large for model building, one-hot encoding exponentially expanded the dataset and out prediction accuracy was below our expectations. This was solved through dropping the redundant variables, taking 10% random sample of the data for exploratory model building, utilized Pandas "Get Dummies" sucessfully. and performed hyperparameter tuning.
 
 
 ## Future Goals
