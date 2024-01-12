@@ -94,6 +94,10 @@ print(feature_importance.sort_values(by='Importance', ascending=False))
 
 #### 5.Created Tabeleau Dashboard to Support Model
 
+<img src="images/Dashboard 1.png" alt="Tableau Desktop">
+
+<img src="images/Dashboard 2.png" alt="Tableau Desktop">
+
 
 ## Results
 
