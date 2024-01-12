@@ -26,6 +26,9 @@ columns_to_drop = ['AIRLINE', 'ORIGIN_AIRPORT', 'DESTINATION_AIRPORT', 'TAIL_NUM
 flights.drop(columns = columns_to_drop, inplace = True)
 ```
 
+
+
+
 <img src="images/Connecting Data.png" alt="Tableau Desktop">
 
 #### 3.Built Basic & Advanced Classification Models
