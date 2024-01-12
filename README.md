@@ -8,7 +8,7 @@ The goal of this project was to analyze a flight data set that housed informatio
 ## Process
 
 #### 1.Identified Target Dataset
-
+The comprehensive data set was acquired from https://www.kaggle.com/datasets/usdot/flight-delays/data for US flights in 2015 and gave us over five million rows of total data to work with. There was high confidence that there would be sufficient informaton to test our predictions and achieve high accuracy.
 
 #### 2.Conduct EDA
 ##### Cleaned data, Connected in Tableau and One-hot encoded target variables
