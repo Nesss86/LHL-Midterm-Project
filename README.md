@@ -7,11 +7,11 @@ The goal of this project was to analyze a flight data set that housed informatio
 
 ## Process
 
-### 1.Identify Target Dataset
+### 1.Identified Target Dataset
 
 
-### Conduct EDA
-#### 2.Cleaned data and One-hot encoded target variables
+#### 2.Conduct EDA
+##### Cleaned data and One-hot encoded target variables
 
 
 #### 3.Build Basic & Advanced Classification Models
