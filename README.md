@@ -29,7 +29,7 @@ flights.drop(columns = columns_to_drop, inplace = True)
 
 
 
-<img src="images/Connecting Data2.png" alt="Tableau Desktop">
+<img src="images/Connecting2 Data.png" alt="Tableau Desktop">
 
 #### 3.Built Basic & Advanced Classification Models
 ```python
