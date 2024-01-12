@@ -7,9 +7,20 @@ The goal of this project was to analyze a flight data set that housed informatio
 
 ## Process
 
-###
+###Identify Target Dataset
 
-###
+
+###Conduct EDA
+####Cleaned data and One-hot encoded target variables
+
+
+###Build Basic & Advanced Classification Models
+
+
+###Test & Validated Model Results
+
+
+###Created Tabeleau Dashboard to Support Model
 
 
 ## Results
