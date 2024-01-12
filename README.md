@@ -14,11 +14,7 @@ The goal of this project was to analyze a flight data set that housed informatio
 ##### Cleaned data, Connected in Tableau and One-hot encoded target variables
 <img src="images/Connecting Data.png" alt="Tableau Desktop">
 
-
-
-
-
-#### 3.Build Basic & Advanced Classification Models
+#### 3.Built Basic & Advanced Classification Models
 
 
 #### 4.Test & Validated Model Results
