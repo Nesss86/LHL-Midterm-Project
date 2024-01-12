@@ -17,6 +17,14 @@ The goal of this project was to analyze a flight data set that housed informatio
 
 flights.isna().sum()
 ```
+<img src="images/EDA.png" alt="Tableau Desktop">
+
+``` python
+#Based on analysis above, we can remove the columns below as they are mostly blank and will delete the entire dataset of we clean all columns without data. Also removing columns such as "Airline", "Origin Airport", "Destination Airport", and "Tail Number" such those aren't numerical and cannot be part of EDA
+
+columns_to_drop = ['AIRLINE', 'ORIGIN_AIRPORT', 'DESTINATION_AIRPORT', 'TAIL_NUMBER', 'CANCELLATION_REASON', 'AIR_SYSTEM_DELAY', 'SECURITY_DELAY', 'AIRLINE_DELAY', 'LATE_AIRCRAFT_DELAY', 'WEATHER_DELAY', 'DEPARTURE_TIME']
+flights.drop(columns = columns_to_drop, inplace = True)
+```
 
 <img src="images/Connecting Data.png" alt="Tableau Desktop">
 
