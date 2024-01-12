@@ -12,6 +12,12 @@ The goal of this project was to analyze a flight data set that housed informatio
 
 #### 2.Conduct EDA
 ##### Cleaned data, Connected in Tableau and One-hot encoded target variables
+``` python
+#Check which columns have too many rows of empty data
+
+flights.isna().sum()
+```
+
 <img src="images/Connecting Data.png" alt="Tableau Desktop">
 
 #### 3.Built Basic & Advanced Classification Models
