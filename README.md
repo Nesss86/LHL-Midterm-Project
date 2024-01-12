@@ -12,7 +12,7 @@ The goal of this project was to analyze a flight data set that housed informatio
 
 #### 2.Conduct EDA
 ##### Cleaned data, Connected in Tableau and One-hot encoded target variables
-<img src="images/Connected Data.png" alt="Tableau Prep">
+<img src="images/Connected Data.png" alt="Tableau Desktop">
 
 
 
