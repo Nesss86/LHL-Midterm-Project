@@ -89,6 +89,7 @@ print(feature_importance.sort_values(by='Importance', ascending=False))
 
 
 #### 4.Test & Validated Model Results
+<img src="images/Classification Report.png" alt="Tableau Desktop">
 
 
 #### 5.Created Tabeleau Dashboard to Support Model
