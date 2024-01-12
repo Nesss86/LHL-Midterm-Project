@@ -11,7 +11,9 @@ The goal of this project was to analyze a flight data set that housed informatio
 
 
 #### 2.Conduct EDA
-##### Cleaned data and One-hot encoded target variables
+##### Cleaned data, Connected in Tableau and One-hot encoded target variables
+
+
 
 
 #### 3.Build Basic & Advanced Classification Models
