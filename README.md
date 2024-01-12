@@ -11,7 +11,7 @@ The goal of this project was to analyze a flight data set that housed informatio
 The comprehensive data set was acquired from https://www.kaggle.com/datasets/usdot/flight-delays/data for US flights in 2015 and gave us over five million rows of total data to work with. There was high confidence that there would be sufficient informaton to test our predictions and achieve high accuracy.
 
 #### 2.Conduct EDA
-##### Cleaned data, Connected in Tableau and One-hot encoded target variables
+##### Cleaned data and One-hot encoded target variables
 ``` python
 #Check which columns have too many rows of empty data
 
@@ -26,10 +26,6 @@ columns_to_drop = ['AIRLINE', 'ORIGIN_AIRPORT', 'DESTINATION_AIRPORT', 'TAIL_NUM
 flights.drop(columns = columns_to_drop, inplace = True)
 ```
 
-
-
-
-<img src="images/Connecting2 Data.png" alt="Tableau Desktop">
 
 #### 3.Built Basic & Advanced Classification Models
 ```python
@@ -92,7 +88,9 @@ print(feature_importance.sort_values(by='Importance', ascending=False))
 <img src="images/Classification Report.png" alt="Tableau Desktop">
 
 
-#### 5.Created Tabeleau Dashboard to Support Model
+#### 5.Connected in Tableau and Created Dashboards to Support Model 
+
+<img src="images/Connecting2 Data.png" alt="Tableau Desktop">
 
 <img src="images/Dashboard 1.png" alt="Tableau Desktop">
 
