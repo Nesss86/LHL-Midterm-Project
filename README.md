@@ -2,14 +2,12 @@
 
 
 ## Project/Goals
-The goal of this project was to analyze a flight data set that housed information including, but not limited to measures like arrival and dearture times, departure and arrival delays, distance, airline, destination and origin airport, and predict which would be contributing factors to a flight delay. We took advantage of using a classification model with xgboost to try and accurately predict this. 
-
+The goal of this project was to leverage historical US flight data to determine whether a model could be built to accurately forecast flight delays. The dataset contained a number of quantitative and categorical features such as departure time, arrival time, arrival delay, distance, airline, origin and destination airport, among others. The goal was to distill the model to only relevant features and use this features to build a classification model. 
 
 ## Process
 
 #### 1.Identified Target Dataset
-The comprehensive data set was acquired from https://www.kaggle.com/datasets/usdot/flight-delays/data for US flights in 2015 and gave us over five million rows of total data to work with. There was high confidence that there would be sufficient informaton to test our predictions and achieve high accuracy.
-
+The comprehensive data set was acquired from https://www.kaggle.com/datasets/usdot/flight-delays/data for US flights in 2015 and provided over five million rows of total data to work with. The breadth and depth of the dataset provided confidence that statistically significant results could be derived from the overall model. 
 #### 2.Conduct EDA
 ##### Cleaned data and One-hot encoded target variables
 ``` python
