@@ -100,9 +100,20 @@ print(feature_importance.sort_values(by='Importance', ascending=False))
 
 
 ## Results
+The output of our classification model indicated that it is able to correctly predict flight delays 65% of the time.
+- The time at which a flight is scheduled to depart is the most influential factor in predicting flight delays.
+- If the scheduled departure time is later in the day or during peak hours, it could contribute to a higher likelihood of delays.
+- The time at which a flight is scheduled to depart is the most influential factor in predicting flight delays.
+- If the scheduled departure time is later in the day or during peak hours, it could contribute to a higher likelihood of delays.
+- The day of the week when a flight is scheduled plays a role in predicting delays.
+- Flights scheduled on certain days, possibly weekends or weekdays, might be more prone to delays. This could be influenced by factors like increased air traffic on specific days or different operational schedules.
+- The distance between the departure and arrival locations also contributes to predicting flight delays.
+- Longer flights might have different operational considerations or potential for delays compared to shorter flights. Factors like layovers or different airport conditions could influence this.
+
+  Understanding these factors can help in making informed decisions, such as avoiding peak departure times or being cautious during certain months, to minimize the risk of flight delays.
 
 ## Challenges 
-
+Initially tasked with acquiring data from an API, we found it to have too many limitations to be able to grab and analyze the data given the projects time constraints. We still came across challenges like redundant variables, our dataset being too large for model building, one-hot encoding exponentially expanded the dataset and out prediction accuracy was below our expectations. This was solved through dropping the redundant variables, taking 10% random sample of the data for exploratory model building, utilized Pandas "Get Dummies" sucessfully. and performed hyperparameter tuning.
 
 
 ## Future Goals
