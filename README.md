@@ -2,7 +2,7 @@
 
 
 ## Project/Goals
-The goal of this project was to leverage historical US flight data to determine whether a model could be built to accurately forecast flight delays. The dataset contained a number of quantitative and categorical features such as departure time, arrival time, arrival delay, distance, airline, origin and destination airport, among others. The goal was to distill the model to only relevant features and use this features to build a classification model. 
+The goal of this project was to leverage historical US flight data to determine whether a model could be built to accurately forecast flight delays. The dataset contained a number of quantitative and categorical features such as departure time, arrival time, arrival delay, distance, airline, origin and destination airport, among others. The goal was to distill the model to only relevant features and use these features to build a classification model. 
 
 ## Process
 
