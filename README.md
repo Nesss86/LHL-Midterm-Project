@@ -26,7 +26,6 @@ flights.drop(columns = columns_to_drop, inplace = True)
 
 
 #One-hot encode categorical variables airlines, origin airport, and destination airport
-
 flights2 = pd.get_dummies(flights, columns=['AIRLINE', 'ORIGIN_AIRPORT', 'DESTINATION_AIRPORT'])
 
 #Check shape of new DataFrame to confirm one-hot encoding was successfully executed
@@ -34,6 +33,26 @@ flights2.shape
 
 #Check head of file to confirm one-hot encoding for categorical variables to be used in the analysis
 flights2.head()
+#Drop irrelevant columns from analysis that do not intuitively impact whether or not a flight will be on time or late 
+
+columns_to_drop = ['YEAR', 'DAY', 'FLIGHT_NUMBER', 'TAIL_NUMBER', 'DEPARTURE_DELAY', 'TAXI_OUT', 'WHEELS_OFF', 'ELAPSED_TIME', 'AIR_TIME', 'WHEELS_ON', 'TAXI_IN', 'ARRIVAL_TIME', 'DIVERTED', 'CANCELLED', 'CANCELLATION_REASON', 'AIR_SYSTEM_DELAY', 'SECURITY_DELAY', 'AIRLINE_DELAY', 'LATE_AIRCRAFT_DELAY', 'WEATHER_DELAY', 'DEPARTURE_TIME']
+flights2.drop(columns = columns_to_drop, inplace = True)
+#Clean data by dropping all rows with empty data
+
+flights2.dropna(inplace = True)
+#Further cleaning by casting the entire DataFrame as an integer type
+
+flights3 = flights2.astype(int)
+#Remove "Arrival Delay" column as this will be our dependent variable
+
+flights_x = flights3.drop(columns = ['ARRIVAL_DELAY'])
+#Create new DataFrame for dependent variable
+
+flights_y = flights3['ARRIVAL_DELAY']
+flights_y = pd.DataFrame(flights_y)
+#Classify flights as late if their arrival delay time is > 0 minutes (Value = 1) otherwise if on-time or early (Value = 0)
+
+flights_y['IS_LATE'] = (flights_y['ARRIVAL_DELAY'] > 0).astype(int)
 ```
 
 
