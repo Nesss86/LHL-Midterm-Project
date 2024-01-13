@@ -22,6 +22,15 @@ flights.isna().sum()
 
 columns_to_drop = ['AIRLINE', 'ORIGIN_AIRPORT', 'DESTINATION_AIRPORT', 'TAIL_NUMBER', 'CANCELLATION_REASON', 'AIR_SYSTEM_DELAY', 'SECURITY_DELAY', 'AIRLINE_DELAY', 'LATE_AIRCRAFT_DELAY', 'WEATHER_DELAY', 'DEPARTURE_TIME']
 flights.drop(columns = columns_to_drop, inplace = True)
+
+
+
+#One-hot encode categorical variables airlines, origin airport, and destination airport
+
+flights2 = pd.get_dummies(flights, columns=['AIRLINE', 'ORIGIN_AIRPORT', 'DESTINATION_AIRPORT'])
+#Check shape of new DataFrame to confirm one-hot encoding was successfully executed
+
+flights2.shape
 ```
 
 
