@@ -28,9 +28,12 @@ flights.drop(columns = columns_to_drop, inplace = True)
 #One-hot encode categorical variables airlines, origin airport, and destination airport
 
 flights2 = pd.get_dummies(flights, columns=['AIRLINE', 'ORIGIN_AIRPORT', 'DESTINATION_AIRPORT'])
-#Check shape of new DataFrame to confirm one-hot encoding was successfully executed
 
+#Check shape of new DataFrame to confirm one-hot encoding was successfully executed
 flights2.shape
+
+#Check head of file to confirm one-hot encoding for categorical variables to be used in the analysis
+flights2.head()
 ```
 
 
